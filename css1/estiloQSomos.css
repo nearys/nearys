@@ -1,0 +1,88 @@
+body{
+	background-image: url(../img/mv17.jpg);
+}
+.container{
+	width: 1000px;
+	background-color:#708357;
+	margin: auto;
+	border.border-radius: 
+}
+
+.menu{
+	text-align: center;
+}
+
+.menu li{
+display: inline-block;
+padding: 8px 20px 4px 30px;
+}
+
+.menu a{
+	text-emphasis:nome;
+	color:skyblue;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	background-color: #E74C3C;
+	padding: 10px;
+	border-radius: 20px; 
+}
+
+.col{
+	widows: 265px;
+	vertical-align: top;
+	display: inline-block;
+	padding: 20px;
+	text-align: justify;
+}
+
+.col h2{
+	color:#08399B;
+	
+}
+
+.row{
+	text-align: center;
+}
+.footer{
+	overflow: :hidden;
+}
+
+.footer a{
+	color:black;
+	text-decoration: none; 
+}
+
+.footer span{
+	float: left;
+	padding-left: 60px;
+	margin-top: 20px; 
+
+
+}
+
+#contenido2{
+width: 1000px;
+height: 580px;
+float: left;
+background-color:#708357;
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 10px;
+
+
+
+}
+/* crea un cuadro al la derecho de la pantalla   */
+aside{
+width: 250px;
+height: 500px;
+background-color: #DBB3DC;
+margin-top: 10px;
+float: right;
+}
+
+.header{
+	text-align: center;
+}

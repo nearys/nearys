@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<style>
+body{
+    background-color: #0CF6FA;
+    font-family: Arial;
+
+}
+#main-container{
+    margin: 150px auto;
+    width:600px;
+
+}
+table{
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    padding: 20px;
+}
+
+thead{
+    background-color: #246355;
+    border-bottom: solid 5px #0F362D;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #ddd;
+
+}
+tr:hover td{
+    background-color: #369681;
+    color: white;
+}
+
+a{
+    display: inline-block;
+    text-emphasis:nome;
+    color:black;
+}
+
+a:hover{
+    background-color: #E74C3C;
+    padding: 10px;
+    border-radius: 20px; 
+}
+</style>
+
+<script language="javascript" type="text/javascript">
+
+function closed() { window.open('','_parent',''); window.close(); }
+
+function averiguarNota(examen) {
+var resultado=0;
+var total=examen.elements.length;
+//alert(total);
+for (i=0;i<examen.elements.length;i++)
+if ((examen.elements[i].type=="radio") &&
+(examen.elements[i].value=="bien") &&
+(examen.elements[i].checked))
+resultado++;
+alert("Acertaste "+resultado+" de 5 preguntas.");
+ alert("Te llevaste una historieta gratis, envíanos un correo para que canjees el código: #BC5AS4E5ASE")
+return false;
+}
+
+</script>
+
+
+
+</head>
+
+
+
+<body>
+Si aciertas todas las respuestas te llevas una historieta gratis: ¿Estas listo?
+<form name="examen" onSubmit="return averiguarNota(this);">
+<p>1. ¿En qué año se estrenó la primera película de Iron Man, que lanzó el Marvel Cinematic Universe?<br>
+<label><input type="radio" name="Rpta1" value="mal" id="Rpta1_0">2005</label>
+<br>
+<label><input type="radio" name="Rpta1" value="mal" id="Rpta1_1">2020</label>
+<br>
+<label><input type="radio" name="Rpta1" value="bien" id="Rpta1_2">2008</label>
+<br>
+</p>
+<p>2. ¿Cómo se llama el martillo de Thor?</p>
+<p>
+<label> <input type="radio" name="Rpta2" value="bien" id="Rpta2_0"> Mjolnir</label>
+<br>
+<label><input type="radio" name="Rpta2" value="mal" id="Rpta2_1">Aesir</label>
+<br>
+<label><input type="radio" name="Rpta2" value="mal" id="Rpta2_2">Vanir</label>
+<br>
+</p>
+
+<p>3. ¿De qué está hecho el escudo del Capitán América?
+<p>
+<label><input type="radio" name="rpta3" value="mal" id="rpta3_0"> Adamantium</label>
+<br>
+<label><input type="radio" name="rpta3" value="bien" id="rpta3_1"> Vibranio</label>
+<br>
+<label><input type="radio" name="rpta3" value="mal" id="rpta3_2"> Carbonadio</label>
+<br>
+
+<p>4. Antes de convertirse en Visión, ¿cómo se llama el mayordomo de inteligencia artificial de Iron Man?
+<p>
+<label>
+<input type="radio" name="Rpta4" value="mal" id="Rpta4_0"> HOMERO</label>
+<br>
+<label>
+<input type="radio" name="Rpta4" value="mal" id="Rpta4_1">MARVIN</label>
+<br>
+<label>
+<input type="radio" name="Rpta4" value="mal" id="Rpta4_2">ALFREDO</label>
+<br>
+<label>
+<input type="radio" name="Rpta4" value="bien" id="Rpta4_3">JARVIS</label>
+<br>
+
+<p>5. ¿Quién fue el último titular de la Piedra espacial antes de que Thanos lo reclame por su Infinity Gauntlet?
+<p>
+<label>
+<input type="radio" name="Rpta5" value="mal" id="Rpta5_0">Tony Stark</label>
+<br>
+<label>
+<input type="radio" name="Rpta5" value="bien" id="Rpta5_1">Loki </label>
+<br>
+<label>
+<input type="radio" name="Rpta5" value="mal" id="Rpta5_2">El coleccionista </label>
+<br>
+<br>
+
+<p>
+<input type="submit" name="submit" id="submit" value="Preguntas acertadas">
+</p>
+
+</form>
+
+<br> <button onclick="location.href='Principal.html'">Inicio</button>
+
+</body>
+</html>

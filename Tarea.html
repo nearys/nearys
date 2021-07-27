@@ -1,0 +1,122 @@
+<HTML>
+<HEAD><TITLE>TARIFA</TITLE>
+
+<title>Documento sin título</title>
+<style>
+body{
+background-color: #0CF6FA;
+font-family: Arial;
+
+}
+#main-container{
+margin: 150px auto;
+width:600px;
+
+}
+table{
+background-color: white;
+text-align: left;
+border-collapse: collapse;
+width: 100%;
+}
+th, td{
+padding: 20px;
+}
+
+thead{
+background-color: #246355;
+border-bottom: solid 5px #0F362D;
+color: white;
+}
+tr:nth-child(even){
+background-color: #ddd;
+
+}
+tr:hover td{
+background-color: #369681;
+color: white;
+}
+</style>
+
+<script language="JavaScript">
+function informar(){
+var men=" ";
+men+="Se ha seleccionado: \n Saga Spiderman..: ";
+for (j=0; j<form1.sg.length; j++){
+if (form1.sg[j].checked){
+men+=document.form1.sg[j].value
+}
+}
+men+="\n Saga Thanos..: ";
+for (j=0; j<form1.st.length; j++){
+if (form1.st[j].checked){
+men+=document.form1.st[j].value
+}
+}
+
+
+men+="\n Saga Ghost Rider..: ";
+for (j=0; j<form1.sr.length; j++){
+if (form1.sr[j].checked){
+men+=document.form1.sr[j].value
+}
+}
+
+
+men+="\n Saga Otros..: ";
+for (j=0; j<form1.so.length; j++){
+if (form1.so[j].checked){
+men+=document.form1.so[j].value
+}
+}
+
+
+alert(men);
+
+
+}
+
+
+</script></head>
+
+
+<body><center><h1>PRODUCTOS DE OFERTA SEPARA TU PEDIDO AHORA MISMO</h1></center>
+<form name="form1" action="javascript:informar()">
+Selecciona las opciones deseadas ... <br><br>
+<Table border=1>
+<tr align=center><td>Saga Spiderman</td><td>Saga Thanos</td><td>Saga Ghost Rider</td><td>Saga Otros</td></tr>
+<td> <input type=radio name="sg" value="El Asombroso Spiderman. El regreso del ladrón" checked>El Asombroso Spiderman. El regreso del ladrón<br>
+<input type=radio name="sg" value="El Asombroso Spiderman. Vuelta A Casa">El Asombroso Spiderman. Vuelta A Casa<br>
+<input type=radio name="sg" value="Marvel Saga. El Asombroso Spiderman. El Otro. Segunda Parte">Marvel Saga. El Asombroso Spiderman. El Otro. Segunda Parte<br>
+</td>
+<td>
+<input type=radio name="st" value="Thanos. El Conflicto Del Infinito">Thanos. El Conflicto Del Infinito<br>
+<input type=radio name="st" value="Thanos. El Fin Del Infinito" checked>Thanos. El Fin Del Infinito<br>
+<input type=radio name="st" value="Thanos. La Entidad Del Infinito">Thanos. La Entidad Del Infinito<br>
+</td>
+
+
+<td>
+<input type=radio name="sr" value="Ghost Rider 2. El Hombre En Llamas">Ghost Rider 2. El Hombre En Llamas<br>
+<input type=radio name="sr" value="Ghost Rider 4. Del Infierno Al Paraíso" checked>Ghost Rider 4. Del Infierno Al Paraíso<br>
+<input type=radio name="sr" value="Ghost Rider 3. Revelaciones">Ghost Rider 3. Revelaciones<br>
+</td>
+
+
+<td>
+<input type=radio name="so" value="Los Vengadores Desunidos" checked>SLos Vengadores Desunidos<br>
+<input type=radio name="so" value="Marvel Gold Omnibus La Patrulla.X Original 2. ¿Quien Desafia Clasico Marvel?">Marvel Gold Omnibus La Patrulla.X Original 2. ¿Quien Desafia Clasico Marvel?<br>
+<input type=radio name="so" value="Los 4 Fantásticos. Tres">Los 4 Fantásticos. Tres<br>
+</td>
+
+
+</tr>
+</table>
+<br>
+
+
+<input type=submit name="cmdEnviar" value="Enviar">
+<input type=reset name="cmdLimpiar" value="Limpiar">
+<button onclick="location.href='Principal.html'">Inicio</button>
+
+</form></body></html>
